@@ -8,14 +8,14 @@
 .App {
   text-align: center;
   border: 5px solid #36453B;
-  /* width: 50%; */
+  height: 100%;
   background-color:  rgb(221, 228, 194);
   color: #515751
 
 }
 
 input {
-  width: 25em;
+  
   padding: 1em 0;
 }
 
@@ -27,8 +27,8 @@ input {
 }
 
 .color-box {
-  height: 8em;
-  width: 8em;
+  height: 5em;
+  width: 5em;
   border: 5px solid black;
   margin-right: 2em;
 
