@@ -6,7 +6,7 @@ class Slider extends Component {
     this.state = {
       hue: 180,
       saturation: 50,
-      brightness: 50, 
+      lightness: 50, 
       alpha: 1,
   
     };
@@ -46,15 +46,18 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className="console">
-        <section
+      <div className="console"  style={{
+        backgroundColor: `hsla(${this.state.hue},${this.state.saturation}%,${this.state.lightness}%,${this.state.alpha})`
+      }}>
+        {/* <section
           className="color-box"
           style={{
             backgroundColor: `hsla(${this.state.hue},${this.state.saturation}%,${this.state.lightness}%,${this.state.alpha})`
           }}
-        />
+        /> */}
         <section>
           <section className="sliders">
+            <p>Hue: {this.state.hue}</p>
             <input
               type="range"
               min="1"
@@ -63,6 +66,7 @@ class Slider extends Component {
               onInput={this.hueUpdated}
               value={this.state.hue}
             />
+             <p>Saturation: {this.state.saturation}</p>
             <input
               type="range"
               min="1"
@@ -70,6 +74,7 @@ class Slider extends Component {
               name="saturation"
               onInput={this.saturationUpdated}
             />
+             <p>Lightness: {this.state.lightness}</p>
             <input
               type="range"
               min="1"
@@ -77,6 +82,7 @@ class Slider extends Component {
               name="lightness"
               onInput={this.lightnessUpdated}
             />
+             <p>Alpha: {this.state.alpha}</p>
             <input
               type="range"
               min="1"
@@ -84,6 +90,10 @@ class Slider extends Component {
               name="alpha"
               onInput={this.alphaUpdated}
             />
+          </section>
+          <section className="rsla">
+          <h5>CSS Color Code</h5>
+          <p>hsla({this.state.hue},{this.state.saturation},{this.state.lightness},{this.state.alpha})</p>
           </section>
         </section>
       </div>
