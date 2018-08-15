@@ -2,3 +2,21 @@
   text-align: center;
 }
 
+input {
+  width: 25em;
+}
+
+.console {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.color-box {
+  height: 5em;
+  width: 5em;
+  border: 5px solid black;
+  margin-right: 2em;
+  
+}
