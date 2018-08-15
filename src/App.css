@@ -1,9 +1,22 @@
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
+  border: 5px solid #36453B;
+  width: 50%;
+  background-color:  rgb(221, 228, 194);
+  color: #515751
+
 }
 
 input {
   width: 25em;
+  padding: 1em 0;
 }
 
 .console {
@@ -14,9 +27,14 @@ input {
 }
 
 .color-box {
-  height: 5em;
-  width: 5em;
+  height: 8em;
+  width: 8em;
   border: 5px solid black;
   margin-right: 2em;
-  
+
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
 }

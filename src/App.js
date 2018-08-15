@@ -4,24 +4,17 @@ import Slider from "./Slider";
 
 
 class App extends Component {
-
-  hueUpdated = (event) => {
-    console.log('this works', event.target.value)
-  }
   
   render() {
     return (
-      <div className="App">
+      <section className='body'>
+      <div className="App" >
         <h1>Color Picker</h1>
-        <section className='console'>
-
-          <section>
           
             <Slider />
-         
-          </section>
-        </section>
+
       </div>
+      </section>
     );
   }
 }
